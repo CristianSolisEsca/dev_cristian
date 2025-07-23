@@ -166,13 +166,6 @@
                   <div class="description">Técnico Superior Universitario en Tecnologías de la Información y Comunicación - Universidad Tecnológica de Nezahualcóyotl</div>
                 </div>
               </div>
-
-              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
-                <div class="action-buttons">
-                  <a href="assets/files/CV_Cristian_Solis_2025.pdf" target="_blank" class="btn btn-outline" download>Descarga mi CV</a>
-                </div>
-              </div>
-
             </div>
           </div>
 
@@ -954,23 +947,38 @@
     <section id="contact" class="contact section light-background">
       <div class="container section-title">
         <h2>Contacto</h2>
-        <p>¿Tienes un proyecto o necesitas ayuda? Contáctame directamente por WhatsApp o correo electrónico.</p>
+        <p>¿Tienes un proyecto o necesitas ayuda? Contáctame.</p>
       </div>
 
-      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+      <form action="https://formsubmit.co/cristian.solis.esca@gmail.com" method="POST">
 
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/525523078920" target="_blank" class="btn btn-success btn-lg m-2">
-          <i class="bi bi-whatsapp"></i> Enviarme mensaje por WhatsApp
-        </a>
+        <input type="hidden" name="_captcha" value="true">
 
-        <!-- Email Display -->
-        <div class="mt-4">
-          <i class="bi bi-envelope"></i>  
-          <a href="mailto:cristian.solis.esca@gmail.com">cristian.solis.esca@gmail.com</a>
+        <!-- No redirigir a otra página -->
+        <input type="hidden" name="_next" value="">
+
+        <!-- Opcional: asunto del correo -->
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="col-md-6">
+            <input type="email" name="email" class="form-control" placeholder="Tu correo" required>
+          </div>
+
+          <div class="col-12">
+            <textarea name="message" class="form-control" rows="6" placeholder="Tu mensaje" required></textarea>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </div>
         </div>
+      </form>
 
-      </div>
     </section>
 
 
