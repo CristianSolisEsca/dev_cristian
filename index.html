@@ -943,43 +943,42 @@
     </section><!-- /Testimonials Section -->
 
 
-    <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
       <div class="container section-title">
         <h2>Contacto</h2>
         <p>¿Tienes un proyecto o necesitas ayuda? Contáctame.</p>
       </div>
 
-      <form action="https://formsubmit.co/cristian.solis.esca@gmail.com" method="POST">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-form-wrapper p-4 shadow rounded bg-white">
+              <form action="https://formsubmit.co/cristian.solis.esca@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_next" value="https://cristiansolisesca.github.io/dev_cristian/#contact">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
 
-        <input type="hidden" name="_captcha" value="true">
-
-        <!-- No redirigir a otra página -->
-        <input type="hidden" name="_next" value="">
-
-        <!-- Opcional: asunto del correo -->
-        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-            <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
-          </div>
-
-          <div class="col-md-6">
-            <input type="email" name="email" class="form-control" placeholder="Tu correo" required>
-          </div>
-
-          <div class="col-12">
-            <textarea name="message" class="form-control" rows="6" placeholder="Tu mensaje" required></textarea>
-          </div>
-
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Tu correo" required>
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" class="form-control" rows="6" placeholder="Tu mensaje" required></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                  </div>
+                </div>
+              </form>
+            </div><!-- /.contact-form-wrapper -->
           </div>
         </div>
-      </form>
-
+      </div>
     </section>
+
 
 
 
